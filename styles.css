@@ -30,18 +30,85 @@ table {
 /* end reset browser styles */
 
 
-
-.menu-container {
+.main-section {
 	display: flex;
-	justify-content: center;
-  color: #fff;
-  background-color: #5995DA;  /* Blue */
-  padding: 20px 0;
+	flex-direction: column;
+	width: 1300px;
+	height: 800px;
+	box-sizing: border-box;
+	background-color:  #99a3a4;
+	background-image: url(./images/cityscape.jpeg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 
-.top-links {
+.center-name {
+  color: #17202a;
+	font-size: 30px;
+	margin: auto;
+}
+
+.menu-container1 {
+	background-color: white;
+	text.color: green;
+	z-index: 2
+}
+
+
+
+ul {
+	display:flex;
+	justify-content: space-around;
+  color: #fff;
+  background-color:  #17202a;  /* Blacks */
+  padding: 5px 0;
+	order: -2;
+	line-height: 2;
+	list-style: none;
+	}
+
+	ul li {
+		width: 100px;
+		height: 40px;
+		opacity: .8;
+		float: left;
+	}
+
+	ul li a {
+		text-decoration: none;
+		color: white;
+		display: block;
+	}
+
+	ul li a:hover {
+		background-color: #2e86c1
+;
+;
+	}
+
+.middle-section {
+	max-width: 1400px;
+	margin: 15px auto 0 auto;
 	display: flex;
-	justify-content: space-between;
-  border: 1px solid #fff;  /* For debugging */
-  width: 900px;
+	justify-content: space-around;
+}
+
+.middle-box {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 2px;
+	flex-basis: 30%;
+}
+
+.middle-box:nth-child(1) {background-color: #1c2833;}
+.middle-box:nth-child(2) {background-color:  #2e86c1;}
+.middle-box:nth-child(3) {background-color: #1c2833;}
+
+.footer-section{
+	background-color: #17202a;
+	display: flex;
+	justify-content: space-around;
+	line-height: 2;
 }
